@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Bisnis F&B - Ahmad Syauqi Hulaimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="foto profil.jpg" alt="foto profil" width="300" height="300">
+      <h1>Ahmad Syauqi Hulaimi</h1>
+      <p>Pengusaha F&B</p>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#projects">Toko saya</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section-about">
+    <div class="container">
+      <h2>Tentang Bisnis F&B Saya</h2>
+
+      <p>Selamat datang di dunia cita rasa yang memikat dari bisnis F&B saya. Saya Ahmad Syauqi Hulaimi, seorang pebisnis muda yang berkomitmen untuk menyajikan pengalaman kuliner yang tak terlupakan kepada pelanggan saya.
+        Dari warung kecil di pinggiran, bisnis F&B saya telah tumbuh dan berkembang seiring dedikasi saya terhadap makanan dan minuman.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section-projects">
+    <div class="container">
+      <h2>Toko Saya</h2>
+      <div class="project">
+        <img src="Wonzone.jpg" alt="Project 1" width="850" height="200" >
+        <div class="project-details">
+          <h3>WONZONE</h3>
+          <p>Toko wonzone adalah salah satu dari beberapa proyek bisnis F&B saya yang sukses. Dengan menu yang beragam dan suasana yang nyaman, kami telah menjadi tujuan kuliner favorit di desa ini.</p>
+          <a href="#">Lihat Proyek</a>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-details">
+          <h3>ES SWEGER</h3>
+          <p>ES SWEGER adalah tempat yang sempurna untuk menikmati ES yang segar dan makanan wonton yang lezat. Dengan desain yang modern dan suasana yang ramah, kami mengundang Anda untuk merasakan kelezatan ES kami.</p>
+          <a href="#">Lihat Proyek</a>
+        </div>
+      </div>
+      <!-- Tambahkan proyek-proyek lainnya di sini -->
+    </div>
+  </section>
+
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <h2>Kontak Saya</h2>
+      <p>Untuk informasi lebih lanjut tentang layanan kami atau untuk memesan meja, jangan ragu untuk menghubungi kami melalui email di ahmadsyauqi955@gmail.com atau melalui media sosial di bawah ini.</p>
+      <div class="social-media">
+        <a href="#"><img src="logo fb.avif" alt="Facebook" width="50" height="50"></a>
+        <a href="#"><img src="logo ig.avif" alt="Instagram" width="50" height="50"></a>
+      </div>
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ahmad Syauqi Hulaimi. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
